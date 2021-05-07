@@ -30,7 +30,7 @@ export default function Menu(props){
         }
         axios.post('/order/create',{
             customer:props.customer,
-            vendor:"606af49170663322889fb26a", //will be changed in the future
+            vendor: props.vendor, //will be changed in the future
             snacks: submitOrder
         }).then(response =>{
             if(response.data.success){

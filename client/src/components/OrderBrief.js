@@ -32,7 +32,7 @@ export default function OrderBrief(props) {
                 >
                     <EditOutlined/>
                 </OverlayTrigger>]}>
-                <Meta title={props.order.vendor.name + " - " + props.order.status}/>
+                <Meta title={props.order._id + " - " + props.order.status}/>
             </Card>
         </div>
     )
